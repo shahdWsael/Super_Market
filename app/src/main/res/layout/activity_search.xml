@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter product name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Type:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/searchTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Name"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Price" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/availableCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only show available items" />
+        <Switch
+            android:id="@+id/saleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only show items on sale"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            style="@style/MyButtonStyle"
+            android:text=" Search"
+            android:layout_marginTop="16dp" />
+
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/MyButtonStyle"
+            android:text=" Back"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>
